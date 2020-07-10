@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 import Header from "../components/Header";
-import MainSection from "./Main";
+import Main from "./Main";
 
 const useTodos = () => {
     const [todos, setTodos] = useState([]);
@@ -69,7 +69,7 @@ const App = () => {
     return (
         <div>
             <Header addTodo={addTodo} />
-            <MainSection
+            <Main
                 todos={todos}
                 deleteTodo={deleteTodo}
                 editTodo={editTodo}
