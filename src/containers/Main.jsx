@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import TodoList from "../components/TodoList";
 import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE } from "../components/TodoFilters";
 
-const MainSection = ({
+const Main = ({
     todos,
     deleteTodo,
     editTodo,
@@ -63,7 +63,7 @@ const MainSection = ({
     );
 };
 
-MainSection.propTypes = {
+Main.propTypes = {
     todos: PropTypes.arrayOf(
         PropTypes.shape({
             id: PropTypes.number.isRequired,
@@ -78,4 +78,4 @@ MainSection.propTypes = {
     clearCompleted: PropTypes.func.isRequired
 };
 
-export default MainSection;
+export default Main;
